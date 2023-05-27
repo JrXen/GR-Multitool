@@ -1,0 +1,11 @@
+requests
+discord.py==1.7.3
+json
+time
+random
+colorama
+string
+os
+ctypes
+httpx
+asyncio
