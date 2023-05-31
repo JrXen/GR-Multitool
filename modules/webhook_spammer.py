@@ -1,34 +1,33 @@
-import httpx #line:1
-import asyncio #line:2
-ANSI_PURPLE ="\u001b[35m"#line:5
-ANSI_RESET ="\u001b[0m"#line:7
-async def spam_webhook (O00OO000O00OOOOO0 ,O00O0OO00OO00OO00 ,OO00000OOOO0O00O0 ):#line:9
-    try :#line:10
-        async with httpx .AsyncClient (proxies ={"https://":O00O0OO00OO00OO00 })as O0O00O0O00OOOO00O :#line:11
-            O00OO00O00OO0OO0O =False #line:12
-            while True :#line:13
-                OO0OOOOO000OO0000 =await O0O00O0O00OOOO00O .post (O00OO000O00OOOOO0 ,json ={"content":OO00000OOOO0O00O0 })#line:14
-                if OO0OOOOO000OO0000 .status_code ==204 and not O00OO00O00OO0OO0O :#line:15
-                    O00OO00O00OO0OO0O =True #line:16
-                await asyncio .sleep (0.5 )#line:17
-    except httpx .HTTPError :#line:18
-        pass #line:19
+import asyncio #line:1
+import random #line:2
+import httpx #line:3
+async def spam_webhook (O00O0OOO0OO00OOOO ,O0OOO00OOOOO0O0OO ,O0OO00OO0OO0O00OO ,OOO000O0OOOO00OOO ):#line:6
+    async with O00O0OOO0OO00OOOO :#line:7
+        for _OO0OO0O0000OOO00O in range (OOO000O0OOOO00OOO ):#line:8
+            OO0OO0000OO00O0O0 =await O00O0OOO0OO00OOOO .post (O0OOO00OOOOO0O0OO ,json =O0OO00OO0OO0O00OO )#line:9
+            if OO0OO0000OO00O0O0 .status_code ==200 :#line:10
+                try :#line:11
+                    O0OO00O00000OOOO0 =OO0OO0000OO00O0O0 .json ()#line:12
+                except ValueError :#line:14
+                    pass #line:15
+            await asyncio .sleep (0.00001 )#line:18
 async def main ():#line:21
-    O00O0000OOO00000O =input ("Enter the webhook URL: ")#line:22
-    O0OOO00O00O0OO0OO ="config/proxy.txt"#line:23
-    O0OOO000OOOOOO0OO =input ("Enter the message you want to send: ")#line:24
-    with open (O0OOO00O00O0OO0OO ,"r")as OOOOO00O0000OO00O :#line:28
-        OOOOOO0OO0O0O0O0O =OOOOO00O0000OO00O .read ().splitlines ()#line:29
-    if not OOOOOO0OO0O0O0O0O :#line:32
-        print ("No proxies found. Using current IP address without a proxy.")#line:33
-        await spam_webhook (O00O0000OOO00000O ,"",O0OOO000OOOOOO0OO )#line:34
-    else :#line:35
-        O00O0OO00OO00O00O =[]#line:36
-        for O0000O0OOO0OO000O in OOOOOO0OO0O0O0O0O :#line:37
-            OO0O0O0O0OO00OO0O ="http://"+O0000O0OOO0OO000O #line:38
-            O00O0OO00OO00O00O .append (spam_webhook (O00O0000OOO00000O ,OO0O0O0O0OO00OO0O ,O0OOO000OOOOOO0OO ))#line:39
-        print (f"Using {len(OOOOOO0OO0O0O0O0O)} proxy(s) for the request.")#line:41
-        print (f"{ANSI_PURPLE}SPAMMING!{ANSI_RESET}")#line:42
-        await asyncio .gather (*O00O0OO00OO00O00O )#line:43
-if __name__ =="__main__":#line:46
-    asyncio .run (main ())#line:47
+    OOOO000O000000O00 =input ("Enter the webhook URL: ")#line:22
+    O0000O0OOOOO00OOO =input ("Enter the message to send: ")#line:23
+    O00O000O0OOO0OO00 =int (input ("Enter the number of times to send the message: "))#line:24
+    OO0O00O00O0OO00OO =int (input ("Enter the timeout duration (in seconds): "))#line:25
+    O000O0OOO0OO0O0O0 ="config/tokens.txt"#line:27
+    OOO0000O000O0O000 ="config/proxy.txt"#line:28
+    with open (O000O0OOO0OO0O0O0 ,"r")as O000O0OOO0OO0O0O0 ,open (OOO0000O000O0O000 ,"r")as OOO0000O000O0O000 :#line:29
+        O0O000O00OOO0000O =O000O0OOO0OO0O0O0 .read ().splitlines ()#line:30
+        OO0O00OOOO0O0O0OO =OOO0000O000O0O000 .read ().splitlines ()#line:31
+    O0OO0O00OO0OO0OO0 =[]#line:33
+    for OOOO00O0OOOO0OOOO ,OO000O00O0O000O00 in enumerate (O0O000O00OOO0000O ):#line:34
+        O000O00O0O0OOO00O =random .choice (OO0O00OOOO0O0O0OO )#line:35
+        O0O0O0000OOOOO00O =httpx .AsyncClient (proxies ={"http://":O000O00O0O0OOO00O ,"https://":O000O00O0O0OOO00O },timeout =httpx .Timeout (timeout =None ))#line:39
+        OOO0OO0OO0O0O0000 ={"content":O0000O0OOOOO00OOO }#line:42
+        O0OO000O00OOOOO00 =asyncio .create_task (spam_webhook (O0O0O0000OOOOO00O ,OOOO000O000000O00 ,OOO0OO0OO0O0O0000 ,O00O000O0OOO0OO00 ))#line:43
+        O0OO0O00OO0OO0OO0 .append (O0OO000O00OOOOO00 )#line:44
+    await asyncio .gather (*O0OO0O00OO0OO0OO0 )#line:46
+if __name__ =="__main__":#line:48
+    asyncio .run (main ())#line:49

@@ -1,32 +1,8 @@
+
 import subprocess
-import colorama
-from colorama import Fore, Style
 
-colorama.init()
 
-banner = f"""
-{Fore.LIGHTMAGENTA_EX} ██████╗ ██████╗      ██████╗ ███╗   ██╗    ████████╗ ██████╗ ██████╗ 
-{Fore.LIGHTMAGENTA_EX}██╔════╝ ██╔══██╗    ██╔═══██╗████╗  ██║    ╚══██╔══╝██╔═══██╗██╔══██╗
-{Fore.LIGHTMAGENTA_EX}██║  ███╗██████╔╝    ██║   ██║██╔██╗ ██║       ██║   ██║   ██║██████╔╝
-{Fore.LIGHTMAGENTA_EX}██║   ██║██╔══██╗    ██║   ██║██║╚██╗██║       ██║   ██║   ██║██╔═══╝ 
-{Fore.LIGHTMAGENTA_EX}╚██████╔╝██║  ██║    ╚██████╔╝██║ ╚████║       ██║   ╚██████╔╝██║     
-{Fore.LIGHTMAGENTA_EX} ╚═════╝ ╚═╝  ╚═╝     ╚═════╝ ╚═╝  ╚═══╝       ╚═╝    ╚═════╝ ╚═╝     
 
-{Style.RESET_ALL}
-{Fore.CYAN}╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋
-{Fore.CYAN}╋{"TOKEN ":^25}╋{"WEBHOOK":^25}╋{"OTHER":^25}╋{"NITRO":^25}╋
-{Fore.CYAN}╋{"-" * 27}╋{"-" * 27}╋{"-" * 27}╋{"-" * 20}╋
-╋ {Fore.YELLOW}[1]{Fore.RESET} Token Checker         ╋ {Fore.YELLOW}[6]{Fore.RESET} Webhook Spammer     ╋ {Fore.YELLOW}[8]{Fore.RESET} Hypesquad          ╋ {Fore.YELLOW}[10]{Fore.RESET} Nitro Generator    ╋
-╋ {Fore.YELLOW}[2]{Fore.RESET} Leave Servers         ╋ {Fore.YELLOW}[7]{Fore.RESET} Webhook Deleter     ╋ {Fore.YELLOW}[9]{Fore.RESET} COMING SOON        ╋ {Fore.YELLOW}[11]{Fore.RESET} Nitro Checker      ╋
-╋ {Fore.YELLOW}[3]{Fore.RESET} Onliner               ╋                         ╋                        ╋                         ╋
-╋ {Fore.YELLOW}[4]{Fore.RESET} Nuker                 ╋                         ╋                        ╋                         ╋  
-╋ {Fore.YELLOW}[5]{Fore.RESET} Token Info            ╋                         ╋                        ╋                         ╋
-╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋╋
-"""
-
-print(banner)
-
-user_input = input("Select: ")
 
 options = {
     "1": ["Starting Token Checker...", ["python", "modules/checker.py"]],
@@ -37,14 +13,40 @@ options = {
     "6": ["Starting Webhook Spammer...", ["python", "modules/webhook_spammer.py"]],
     "7": ["Starting Webhook Deleter...", ["python", "modules/deleter.py"]],
     "8": ["Starting Hypesquad...", ["python", "modules/hypesquad.py"]],
-    "9":  ["Coming Soon"],
+    "9": ["Starting Raid...", ["python", "modules/raid.py"]],
     "10": ["Starting Nitro Generator...", ["python", "modules/nitro_generator.py"]],
     "11": ["Starting Nitro Checker...", ["python", "modules/nitro_checker.py"]],
+    "12": ["..................",  ["python", "modules/massdm.py"]],
+    "13": ["..................",  ["python", "modules/massdm.py"]],
+    "14": ["..................",  ["python", "modules/massdm.py"]],        
+    "15": ["=.=",  ["python", "modules/credits.py"]]    
 }
+
+from colorama import init, Fore, Style
+
+init(autoreset=True)
+
+banner = f"""
+{' ' * 14}{Fore.CYAN}     ╔═══════════════════════════════════════════════════════╗{Style.RESET_ALL}
+{' ' * 14}{Fore.CYAN}     ║           {Fore.WHITE}https://discord.gg/vTtScREqkk{Fore.CYAN}               ║{Style.RESET_ALL}
+{' ' * 10}{Fore.CYAN}╔═════════════════════════════════════════════════════════════════════════════╗{Style.RESET_ALL}
+{' ' * 10}{Fore.CYAN}║  {Fore.GREEN}[1] Token Checker        {Fore.CYAN}║  {Fore.GREEN}[6] Webhook Spammer    {Fore.CYAN}║  {Fore.GREEN}[11] Nitro Checker   {Fore.CYAN}║{Style.RESET_ALL}
+{' ' * 10}{Fore.CYAN}║  {Fore.GREEN}[2] Leave Servers        {Fore.CYAN}║  {Fore.GREEN}[7] Webhook Deleter    {Fore.CYAN}║  {Fore.GREEN}[12] MassDM          {Fore.CYAN}║{Style.RESET_ALL}
+{' ' * 10}{Fore.CYAN}║  {Fore.GREEN}[3] Onliner              {Fore.CYAN}║  {Fore.GREEN}[8] Hypesquad          {Fore.CYAN}║  {Fore.GREEN}[13] Soon            {Fore.CYAN}║{Style.RESET_ALL}
+{' ' * 10}{Fore.CYAN}║  {Fore.GREEN}[4] Nuker                {Fore.CYAN}║  {Fore.GREEN}[9] Raid               {Fore.CYAN}║  {Fore.GREEN}[14] Soon            {Fore.CYAN}║{Style.RESET_ALL}
+{' ' * 10}{Fore.CYAN}║  {Fore.GREEN}[5] Token Info           {Fore.CYAN}║  {Fore.GREEN}[10] Nitro Generator   {Fore.CYAN}║  {Fore.GREEN}[15] Credits         {Fore.CYAN}║{Style.RESET_ALL}
+{' ' * 10}{Fore.CYAN}╚═════════════════════════════════════════════════════════════════════════════╝{Style.RESET_ALL}
+"""
+
+print(banner)
+
+
+user_input = input("Select an option: ")
 
 if user_input in options:
     selected_option = options[user_input]
     print(selected_option[0])
-    subprocess.call(selected_option[1])
+    subprocess.run(selected_option[1])
 else:
-    print("Invalid input. Please enter a valid number.")
+    print("Invalid option selected.")
+ 
