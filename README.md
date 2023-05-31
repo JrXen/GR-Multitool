@@ -26,7 +26,6 @@ This tool provides a range of functionalities designed to assist with Discord au
 3. Start run.bat
 
 
-Showcase 
-https://cdn.discordapp.com/attachments/1110499361412087835/1111945766899023943/image.png
+[Showcase](https://cdn.discordapp.com/attachments/1113127404223856672/1113348209503371315/image.png)
 
 
