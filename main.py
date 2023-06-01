@@ -16,9 +16,9 @@ options = {
     "9": ["Starting Raid...", ["python", "modules/raid.py"]],
     "10": ["Starting Nitro Generator...", ["python", "modules/nitro_generator.py"]],
     "11": ["Starting Nitro Checker...", ["python", "modules/nitro_checker.py"]],
-    "12": ["..................",  ["python", "modules/massdm.py"]],
-    "13": ["..................",  ["python", "modules/massdm.py"]],
-    "14": ["..................",  ["python", "modules/massdm.py"]],        
+    "12": ["Starting Vouch",  ["python", "modules/vouch.py"]],
+    "13": ["..................",  ["python", "modules/pinger.py"]],
+    "14": ["..................",  ["python", "modules/discordbotnuker.py"]],        
     "15": ["=.=",  ["python", "modules/credits.py"]]    
 }
 
@@ -31,9 +31,9 @@ banner = f"""
 {' ' * 14}{Fore.CYAN}     ║           {Fore.WHITE}https://discord.gg/vTtScREqkk{Fore.CYAN}               ║{Style.RESET_ALL}
 {' ' * 10}{Fore.CYAN}╔═════════════════════════════════════════════════════════════════════════════╗{Style.RESET_ALL}
 {' ' * 10}{Fore.CYAN}║  {Fore.GREEN}[1] Token Checker        {Fore.CYAN}║  {Fore.GREEN}[6] Webhook Spammer    {Fore.CYAN}║  {Fore.GREEN}[11] Nitro Checker   {Fore.CYAN}║{Style.RESET_ALL}
-{' ' * 10}{Fore.CYAN}║  {Fore.GREEN}[2] Leave Servers        {Fore.CYAN}║  {Fore.GREEN}[7] Webhook Deleter    {Fore.CYAN}║  {Fore.GREEN}[12] MassDM          {Fore.CYAN}║{Style.RESET_ALL}
-{' ' * 10}{Fore.CYAN}║  {Fore.GREEN}[3] Onliner              {Fore.CYAN}║  {Fore.GREEN}[8] Hypesquad          {Fore.CYAN}║  {Fore.GREEN}[13] Soon            {Fore.CYAN}║{Style.RESET_ALL}
-{' ' * 10}{Fore.CYAN}║  {Fore.GREEN}[4] Nuker                {Fore.CYAN}║  {Fore.GREEN}[9] Raid               {Fore.CYAN}║  {Fore.GREEN}[14] Soon            {Fore.CYAN}║{Style.RESET_ALL}
+{' ' * 10}{Fore.CYAN}║  {Fore.GREEN}[2] Leave Servers        {Fore.CYAN}║  {Fore.GREEN}[7] Webhook Deleter    {Fore.CYAN}║  {Fore.GREEN}[12] Vouches         {Fore.CYAN}║{Style.RESET_ALL}
+{' ' * 10}{Fore.CYAN}║  {Fore.GREEN}[3] Onliner              {Fore.CYAN}║  {Fore.GREEN}[8] Hypesquad          {Fore.CYAN}║  {Fore.GREEN}[13] Ping Raid       {Fore.CYAN}║{Style.RESET_ALL}
+{' ' * 10}{Fore.CYAN}║  {Fore.GREEN}[4] Nuker                {Fore.CYAN}║  {Fore.GREEN}[9] Raid               {Fore.CYAN}║  {Fore.GREEN}[14] Bot Nuker       {Fore.CYAN}║{Style.RESET_ALL}
 {' ' * 10}{Fore.CYAN}║  {Fore.GREEN}[5] Token Info           {Fore.CYAN}║  {Fore.GREEN}[10] Nitro Generator   {Fore.CYAN}║  {Fore.GREEN}[15] Credits         {Fore.CYAN}║{Style.RESET_ALL}
 {' ' * 10}{Fore.CYAN}╚═════════════════════════════════════════════════════════════════════════════╝{Style.RESET_ALL}
 """

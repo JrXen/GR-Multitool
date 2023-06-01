@@ -29,7 +29,7 @@ async def set_activity(token):
             )
             await client.change_presence(status=discord.Status.dnd, activity=activity)
 
-            await asyncio.sleep(10)  # Update the activity every 10 seconds
+            await asyncio.sleep(1)  # Update the activity every 10 seconds
 
     await client.start(token, bot=False)
 
