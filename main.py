@@ -27,21 +27,35 @@ from colorama import init, Fore, Style
 init(autoreset=True)
 
 banner = f"""
-{' ' * 14}{Fore.CYAN}     ╔═══════════════════════════════════════════════════════╗{Style.RESET_ALL}
-{' ' * 14}{Fore.CYAN}     ║           {Fore.WHITE}https://discord.gg/vTtScREqkk{Fore.CYAN}               ║{Style.RESET_ALL}
-{' ' * 10}{Fore.CYAN}╔═════════════════════════════════════════════════════════════════════════════╗{Style.RESET_ALL}
-{' ' * 10}{Fore.CYAN}║  {Fore.GREEN}[1] Token Checker        {Fore.CYAN}║  {Fore.GREEN}[6] Webhook Spammer    {Fore.CYAN}║  {Fore.GREEN}[11] Nitro Checker   {Fore.CYAN}║{Style.RESET_ALL}
-{' ' * 10}{Fore.CYAN}║  {Fore.GREEN}[2] Leave Servers        {Fore.CYAN}║  {Fore.GREEN}[7] Webhook Deleter    {Fore.CYAN}║  {Fore.GREEN}[12] Vouches         {Fore.CYAN}║{Style.RESET_ALL}
-{' ' * 10}{Fore.CYAN}║  {Fore.GREEN}[3] Onliner              {Fore.CYAN}║  {Fore.GREEN}[8] Hypesquad          {Fore.CYAN}║  {Fore.GREEN}[13] Ping Raid       {Fore.CYAN}║{Style.RESET_ALL}
-{' ' * 10}{Fore.CYAN}║  {Fore.GREEN}[4] Nuker                {Fore.CYAN}║  {Fore.GREEN}[9] Raid               {Fore.CYAN}║  {Fore.GREEN}[14] Bot Nuker       {Fore.CYAN}║{Style.RESET_ALL}
-{' ' * 10}{Fore.CYAN}║  {Fore.GREEN}[5] Token Info           {Fore.CYAN}║  {Fore.GREEN}[10] Nitro Generator   {Fore.CYAN}║  {Fore.GREEN}[15] Credits         {Fore.CYAN}║{Style.RESET_ALL}
-{' ' * 10}{Fore.CYAN}╚═════════════════════════════════════════════════════════════════════════════╝{Style.RESET_ALL}
+{Fore.MAGENTA}
+{' ' * 40}  /$$$$$$  /$$$$$$$ 
+{' ' * 40} /$$__  $$| $$__  $$
+{' ' * 40}| $$  \__/| $$  \ $$
+{' ' * 40}| $$ /$$$$| $$$$$$$/
+{' ' * 40}| $$|_  $$| $$__  $$
+{' ' * 40}| $$  \ $$| $$  \ $$
+{' ' * 40}|  $$$$$$/| $$  | $$
+{' ' * 40}\______/ |__/  |__/
+
+{' ' * 42}made by GR#1111
+{Style.RESET_ALL}
+
+
+{' ' * 14}{Fore.MAGENTA}╔═════════════════════════════════════════════════════════════════════════════╗{Style.RESET_ALL}
+{' ' * 14}{Fore.MAGENTA}║  {Fore.CYAN}[1] Token Checker        {Fore.MAGENTA}  {Fore.CYAN}[6] Webhook Spammer    {Fore.MAGENTA}  {Fore.CYAN}[11] Nitro Checker     {Fore.MAGENTA}║{Style.RESET_ALL}
+{' ' * 14}{Fore.MAGENTA}║  {Fore.CYAN}[2] Leave Servers        {Fore.MAGENTA}  {Fore.CYAN}[7] Webhook Deleter    {Fore.MAGENTA}  {Fore.CYAN}[12] Vouches           {Fore.MAGENTA}║{Style.RESET_ALL}
+{' ' * 14}{Fore.MAGENTA}║  {Fore.CYAN}[3] Onliner              {Fore.MAGENTA}  {Fore.CYAN}[8] Hypesquad          {Fore.MAGENTA}  {Fore.CYAN}[13] Ping Raid         {Fore.MAGENTA}║{Style.RESET_ALL}
+{' ' * 14}{Fore.MAGENTA}║  {Fore.CYAN}[4] Nuker                {Fore.MAGENTA}  {Fore.CYAN}[9] Raid               {Fore.MAGENTA}  {Fore.CYAN}[14] Bot Nuker         {Fore.MAGENTA}║{Style.RESET_ALL}
+{' ' * 14}{Fore.MAGENTA}║  {Fore.CYAN}[5] Token Info           {Fore.MAGENTA}  {Fore.CYAN}[10] Nitro Generator   {Fore.MAGENTA}  {Fore.CYAN}[15] Credits           {Fore.MAGENTA}║{Style.RESET_ALL}
+{' ' * 14}{Fore.MAGENTA}╚═════════════════════════════════════════════════════════════════════════════╝{Style.RESET_ALL}
 """
 
 print(banner)
 
 
+{Fore.MAGENTA}
 user_input = input("Select an option: ")
+{Style.RESET_ALL}
 
 if user_input in options:
     selected_option = options[user_input]
