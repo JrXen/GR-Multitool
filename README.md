@@ -11,6 +11,7 @@ This tool provides a range of functionalities designed to assist with Discord au
 - **Webhook Spammer:** Send a large number of messages through a webhook to flood a channel.
 - **Webhook Deleter:** Delete a specific webhook .
 - **Nuker:** Nuke The Account.
+- **Check The Showcase DOWN for more** 
 
 
 ## Prerequisites
