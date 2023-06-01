@@ -26,6 +26,7 @@ This tool provides a range of functionalities designed to assist with Discord au
 3. Start run.bat
 
 
-[Showcase](https://cdn.discordapp.com/attachments/1113127404223856672/1113348209503371315/image.png)
+![image](https://github.com/graddon/GR-Multitool/assets/132186309/8761370b-4b4c-403b-becf-d53d9b219d8f)
+
 
 
