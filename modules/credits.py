@@ -21,5 +21,7 @@ def animate_credits():
     time.sleep(3)
     print("\033c")  
 
+    input("Press any key to quit.")
+    
 if __name__ == "__main__":
     animate_credits()

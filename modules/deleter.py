@@ -18,5 +18,9 @@ def main ():#line:17
         O0O00O0O0000OOO00 =input ("Enter the message you want to send: ")#line:22
         send_message (O00O000OOOO0OO0OO ,O0O00O0O0000OOO00 )#line:23
     delete_webhook (O00O000OOOO0OO0OO )#line:25
-if __name__ =="__main__":#line:27
-    main ()#line:28
+
+    
+    input("Press any key to quit.")
+
+if __name__ == "__main__":
+    main()

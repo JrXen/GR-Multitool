@@ -15,5 +15,8 @@ def main ():#line:12
             print (f'Token {O0O0OO0OOO0OOOOOO} is valid.')#line:21
         else :#line:22
             print (f'Token {O0O0OO0OOO0OOOOOO} is invalid.')#line:23
+
+    input("Press any key to quit.")
+
 if __name__ =="__main__":#line:25
     main ()#line:26

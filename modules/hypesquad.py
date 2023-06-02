@@ -36,5 +36,6 @@ def main ():#line:29
         print (f"[✅] Successfully changed to {houses[O0O000OO0OO0OOOO0-1]}!")#line:52
     else :#line:53
         print (f"[-] Failed to change to {houses[O0O000OO0OO0OOOO0-1]}, please try again later!")#line:54
+    input("Press any key to quit.")        
 if __name__ =="__main__":#line:56
     main ()#line:57
