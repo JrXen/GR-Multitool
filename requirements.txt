@@ -1,6 +1,6 @@
 requests
 discord.py==1.7.3
-json
+jsonlib
 time
 random
 colorama
