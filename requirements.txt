@@ -8,4 +8,9 @@ string
 os
 ctypes
 httpx
+psutil
+pypresence 
+time
+sys
+rich
 asyncio
